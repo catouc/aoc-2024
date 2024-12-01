@@ -2,8 +2,8 @@ use v5.36;
 
 $|++;
 
-my @left = [];
-my @right = [];
+my @left;
+my @right;
 foreach my $line ( <STDIN> ) {
 	($a, $b) = $line =~ /(\d+)\s+(\d+)/;
 	push @left, $a;
